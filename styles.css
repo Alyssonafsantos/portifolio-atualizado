@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(93, 150, 119, 0.707);
+}
+
+section {
+    padding-top: 4.5%;
+}
+
+/* CABEÇALHO */
+
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    padding: 0 3rem;
+    height: 9%;
+    background-color: #27E6DF;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.menu-lateral {
+    display: none;
+} 
+
+.cabecalho__container--itens {
+    display: flex;
+    gap: 1rem;
+}
+
+.cabecalho__logo {
+    border-radius: 20px;
+    width: 50px;
+}
+
+.cabecalho__lista {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.cabecalho__lista--itens {
+    list-style: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.07rem;
+}
+
+.btn-fechar {
+    display: none;
+}
+
+/* SOBRE MIM */
+
+.container__sobremim {
+    display: flex;
+    flex-direction: column;
+    margin: 1% 3%;
+    background-color: #2CE6A0;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.container__sobremim--items {
+    display: flex;
+    gap: 10%;
+    margin: 0 1rem;
+}
+
+.container__sobremim--introducao {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 3rem;
+}
+
+.texto--titulo {
+    font-size: 2rem;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.texto-introducao {
+    font-size: 1.5rem;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+}
+
+.imagem--rosto {
+    border-radius: 50%;
+    width: 25vw;
+    box-shadow: 0px 0px 10px 3px;
+}
+
+.container__sobremim--redessociais {
+    display: flex;
+    gap: 4%;
+    font-size: 1.2rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.redessociais--link:hover {
+    box-shadow: 0 0 10px;
+    border-radius: 1rem;
+}
+
+.redessociais--link a, .lista--link{
+    text-decoration: none;
+    color: black;
+    border-radius: 2rem;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+}
+
+.container__sobremim--resumo {
+    margin: 0 1rem;
+}
+
+.resumo--titulo {
+    font-size: 1.7rem;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.resumo--texto {
+    font-size: 1.3rem;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+}
+
+/* SKILLS */
+.container__skills {
+    margin: 1% 3%;
+    background-color: #27B0E6;
+    border-radius: 20px;
+}
+
+.container__skills--itens {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container__skills--titulo {
+    align-self: center;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.svg-icones {
+    height: 40%;
+    width: 40%;
+}
+
+.container__skills--lista {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item--html, .item--css, .item--javascript {
+    background-color: rgb(186, 186, 202);
+    height: 80%;
+    width: 99%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    
+}
+
+.container__skills p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.html--icone, .javascript--icone{
+    width: 70%;
+}
+
+.css--icone {
+    width: 100%;
+}
+
+/* HOBBIES */
+
+.container__hobbies {
+    margin: 1% 3%;
+    background-color: #2CE6A0;
+    border-radius: 20px;
+}
+
+.container__hobbies--itens {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container__hobbies--titulo {
+    align-self: center;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.container__hobbies--lista {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+
+.container__hobbies--item {
+    width: 12%;
+}
+
+.item--skate, .item--guitarra, .item--games, .item--series, .item--musica {
+    background-color: rgb(186, 186, 202);
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    gap: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.guitarra--icone, .games--icone, .musica--icone{
+    width: 29px;
+}
+
+/* FORMAÇÃO */
+
+.container__formacao {
+    margin: 1% 3%;
+    background-color: #27B0E6;
+    border-radius: 20px;
+}
+
+.container__formacao--itens {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.container__formacao--texto{
+    align-self: center;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.container__formacao--lista {
+    display: flex;
+    gap: 2rem;
+    margin: 0 1%;
+}
+
+.container__formacao--item figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.imagem--escola {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fcclogo, .aluralogo, .challengelogo{
+    font-size: 1.2rem;
+}
+
+/* EXPERIÊNCIA */
+
+.xpprofissional {
+    margin: 1% 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #2CE6A0;
+    border-radius: 20px;
+}
+
+.xpprofissional__titulo {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.xpprofissional__projeto-a{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    width: 98%;
+}
+
+.xpprofissional__projeto-b {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    align-items: center;
+    width: 98%;
+}
+
+.projeto__informacao--titulo {
+    font-size: 1.5rem;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.projeto__informacao--paragrafo {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.projeto__informacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.imagem--projeto {
+    width: 700px;
+}
+
+.projeto__informacao--link-a {
+    padding: 1.2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    color:rgb(29, 117, 161);
+    border: none;
+    transition: 1s;
+    text-align: center;
+    background-color: beige;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    
+}
+
+.projeto__informacao--link-b {
+    padding: 1.2rem 1.602rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color:rgb(29, 117, 161);
+    color:aliceblue;
+    border: none;
+    transition: 1s;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.projeto__informacao--link-a:hover, .projeto__informacao--link-b:hover {
+    transform: scale(1.13);
+    box-shadow: 0px 0px 10px;
+}
+
+/* FOOTER */
+/* CONTATO */
+
+.rodape {
+    margin: 1% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #27B0E6;
+    border-radius: 20px;
+}
+
+.rodape__contato {
+    display: flex;
+    gap: 2rem;
+}
+
+.contato--imagem {
+    width: 350px;
+    position: relative;
+    border-radius: 2rem;
+    animation: flutuar 3s ease-in-out infinite alternate;
+    margin: 0 2%;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 50px;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
+
+.rodape__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__formulario--titulo {
+    font-size: 1.7rem;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+
+.rodape__formulario--paragrafo {
+    font-size: 1.3rem;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    margin: 2%;
+}
+
+.rodape__formulario--campo {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.campo--input {
+    border-radius: 10px;
+    padding: 0.65rem;
+    background-color: aquamarine;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 80%;
+}
+
+.rodape__formulario--botao {
+    width: 30%;
+    height: 20%;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: 1s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color:rgb(29, 117, 161);
+    color:aliceblue;
+}
+
+.rodape__formulario--botao:hover {
+    transform: scale(1.13);
+    box-shadow: 0px 0px 10px;
+}
+
+.direitos {
+    align-self: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+/* CORREÇÕES */
+
+@media screen and (max-width: 1192px){           
+    .container__sobremim--items {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-fechar {
+        display: none;
+    }
+
+    .imagem--pessoal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .container__sobremim--introducao {
+        text-align: center;
+    }
+
+    .container__sobremim--redessociais {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 985px) {
+
+    @keyframes displaymenu {
+    0% {
+        width: 0vw;
+    }
+
+    100% {
+        width: 30vw;
+    }
+}
+
+    .cabecalho__container {
+        height: 6%;
+    }
+
+    .xpprofissional__projeto-a, .xpprofissional__projeto-b {
+        flex-direction: column;
+    }
+    
+    .cabecalho__lista {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        background-color: rgb(129, 125, 125);
+        width: 30vw;
+        height: 100vh;
+        gap: 2rem;
+        animation: displaymenu 0.2s ease-in;
+        z-index: 999;
+    }
+    
+    .cabecalho__lista--itens {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: end;
+        border-radius: 20px;
+        padding-right: 10px;
+    }
+    
+    .cabecalho__lista--itens:hover {
+        background-color: rgba(63, 48, 48, 0.17);
+        color: white;
+        transition: 0.4s
+    }
+    
+    .menu-lateral {
+        display: block;
+        font-size: 2rem;
+        margin: 0 0 0 30px;
+    }
+
+    .menu-lateral:hover, .btn-fechar {
+        cursor: pointer
+    }
+
+    .btn-fechar {
+        display: block;
+        font-size: 2rem;
+        margin: 10px 0 0 10px;
+        width:32.5px;
+    }
+    
+    .esconder {
+        display: none;
+    }
+
+    .aparecer {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 783px) {
+    .imagem--projeto {
+        width: 100%;
+    }
+
+    .rodape__contato {
+        flex-direction: column;
+    }
+
+    .rodape__imagem {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contato--imagem {
+        width: 350px;
+        position: static;
+        border-radius: 2rem;
+        animation: none;
+    }
+
+    .rodape__formulario--texto {
+        text-align: center;
+    }
+    
+    .rodape__formulario--campo {
+        margin: 0 auto;
+    }
+
+    .campo--input {
+        width: 100%;
+    }
+
+    .rodape__formulario--botao {
+        width: 50%;
+    }
+
+    .container__sobremim--redessociais {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 454px) {
+    .cabecalho__container {
+        height: 6%;
+    }
+    
+    .cabecalho__container--itens {
+        font-size: 70%;
+        gap: 0;
+        align-items: center;
+    }
+    
+    .container__formacao--lista {
+        flex-direction: column;
+    }
+}

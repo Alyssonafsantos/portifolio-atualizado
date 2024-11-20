@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <div class="cabecalho__container--itens">
+                <img src="assets/img/logotipo as.JPG" class="cabecalho__logo" alt="logotipo as" />
+                <h1 class="cabecalho__nome">Alysson Santos</h1>
+            </div>
+            <div class="cabecalho__menu-lateral" id="btn-menu">
+                <i class="bi bi-list menu-lateral"></i>
+            </div>
+            <div class="cabecalho__container--lista esconder" id="cabecalho-lista">
+                <nav class="cabecalho__navbar">
+                    <ul class="cabecalho__lista">
+                        <i class="bi bi-x-lg btn-fechar" id="btn-fechar"></i>
+                        <a class="lista--link" aria-label="sobre mim" href="#sobremim"><li class="cabecalho__lista--itens">Sobre mim</li></a>
+                        <a class="lista--link" aria-label="skills" href="#skills"><li class="cabecalho__lista--itens">Skills</li></a>
+                        <a class="lista--link" aria-label="hobbies" href="#hobbies"><li class="cabecalho__lista--itens">Hobbies</li></a>
+                        <a class="lista--link" aria-label="formação" href="#formacao"><li class="cabecalho__lista--itens">Formação</li></a>
+                        <a class="lista--link" aria-label="experiência" href="#experiencia"><li class="cabecalho__lista--itens">Projetos</li></a>
+                        <a class="lista--link" aria-label="rodapé" href="#rodape"><li class="cabecalho__lista--itens">Contatos</li></a>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    </header>
+    <main class="principal">
+        <section class="container__sobremim" id="sobremim">
+        <div class="container__sobremim--items">
+            <div class="container__sobremim--introducao">
+                <div class="container__sobremim--texto">
+                    <h2 class="texto--titulo">
+                        Olá, meu nome é Alysson Santos e sou desenvolvedor web
+                    </h2>
+                    <p class="texto-introducao">
+                        Eu sou desenvolvedor web em fase de aprendizado, atualmente estou cursando no projeto One na Alura.
+                    </p>
+                </div>
+                <div class="container__sobremim--redessociais">
+                    <div class="redessociais--link">
+                        <a class="github" aria-label="link para github de alysson" href="https://github.com/Alyssonafsantos">Github <i class="bi bi-github"></i></a>
+                    </div>
+                    <div class="redessociais--link">
+                        <a class="linkedin" aria-label="link para linkedin de alysson" href="https://www.linkedin.com/in/alysson-santos">LinkedIn <i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="redessociais--link">
+                        <a class="instagram" aria-label="link para instagram de alysson" href="https://www.instagram.com/alyssonafsantos">Instagram <i class="bi bi-instagram"></i></a>
+                    </div>
+                    <div class="redessociais--link">
+                        <a class="currículo" aria-label="link para curriculo de alysson" href="#">Currículo <i class="bi bi-list"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container__sobremim--imagem">
+                <figure class="imagem--pessoal">
+                    <img class="imagem--rosto" src="assets/img/foto p1.JPG" alt="Foto de perfil profissional" />
+                </figure>
+            </div>
+        </div>
+        <div class="container__sobremim--resumo">
+            <h3 class="resumo--titulo">Sobre mim</h3>
+            <p class="resumo--texto">Aqui vou descorrer um pouco sobre mim, coisas que gosto de fazer ou que tenha facilidade de fazer, o que faço no meu tempo livre talvez alguma experiência profissional e coisas do tipo.</p>
+        </div>
+        </section>
+        <section class="container__skills" id="skills">
+        <div class="container__skills--itens">
+            <div class="container__skills--titulo">
+                <h2 class="skills--titulo">Skills</h2>
+            </div>
+            <div class="container__skills--lista">
+                <div class="container__skills--item">
+                    <div class="item--html">
+                        <svg  class="svg-icones"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg> 
+                        <p class="item--html__subtitulo">HTML5</p>
+                    </div>
+                </div>
+                <div class="container__skills--item">
+                    <div class="item--css">
+                        <svg class="svg-icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+                        <p class="item--css__subtitulo">CSS</p>
+                    </div>
+                </div>
+                <div class="container__skills--item">
+                    <div class="item--javascript">
+                        <svg class="svg-icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+                        <p class="item--javascript__subtitulo">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="container__hobbies" id="hobbies">
+        <div class="container__hobbies--itens">
+            <div class="container__hobbies--titulo">
+                <h2 class="hobbies--titulo">Hobbies</h2>
+            </div>
+            <div class="container__hobbies--lista">
+                <div class="container__hobbies--item">
+                    <div class="item--skate">
+                        <img src="assets/img/skate_icon.png" alt="icone de skate" class="skate--icone" />
+                        <p class="item--skate__subtitulo">Skate</p>
+                    </div>
+                </div>
+                <div class="container__hobbies--item">
+                    <div class="item--guitarra">
+                        <img src="assets/img/guitarra.png" alt="icone de guitarra" class="guitarra--icone" />
+                        <p class="item--guitarra__subtitulo">Guitarra</p>
+                    </div>
+                </div>
+                <div class="container__hobbies--item">
+                    <div class="item--games">
+                        <img src="assets/img/joystick.png" alt="icone de Games" class="games--icone" />
+                        <p class="item--games__subtitulo">Games</p>
+                    </div>
+                </div>
+                <div class="container__hobbies--item">
+                    <div class="item--series">
+                        <img src="assets/img/tv_icon.png" alt="icone de séries" class="series--icone" />
+                        <p class="item--series__subtitulo">Séries</p>
+                    </div>
+                </div>
+                <div class="container__hobbies--item">
+                    <div class="item--musica">
+                        <img src="assets/img/headphones.png" alt="icone de música" class="musica--icone" />
+                        <p class="item--musica__subtitulo">Música</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="container__formacao" id="formacao">
+        <div class="container__formacao--itens">
+            <div class="container__formacao--texto">  
+                <div class="container__formacao--titulo">
+                    <h2 class="formacao--titulo">Formação acadêmica</h2>
+                </div>
+            </div>
+            <div class="container__formacao--lista">
+                <div class="container__formacao--item">
+                    <figure>
+                        <img src="assets/img/FreeCodeCamp_logo.png" alt="Logo freeCodeCamp" class="imagem--escola" />
+                        <figcaption class="fcclogo">freeCodeCamp</figcaption>
+                    </figure>
+                </div>
+                <div class="container__formacao--item">
+                    <figure>
+                        <img src="assets/img/aluraoracle.png" alt="Logo Alura" class="imagem--escola" />
+                        <figcaption class="aluralogo">Alura</figcaption>
+                    </figure>
+                </div>
+                <div class="container__formacao--item">
+                    <figure>
+                        <img src="assets/img/challenges alura.png" alt="Logo Alura" class="imagem--escola" />
+                        <figcaption class="challengelogo">Challenges Alura</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="xpprofissional" id="experiencia">
+        <div class="xpprofissional__titulo">
+            <h2>Experiência profissional</h2>
+        </div>
+        <div class="xpprofissional__projeto-a">
+            <figure class="projetos__imagem">
+                <img src="assets/img/encriptador.png" alt="Encriptador de texto" class="imagem--projeto" />
+            </figure>
+            <aside class="projeto__informacao">
+                <div class="informacao--conjunto">
+                    <h3 class="projeto__informacao--titulo">Encriptador e descriptador de texto</h3>
+                    <p class="projeto__informacao--paragrafo">Challenge da escola Alura</p>
+                </div>
+                <a href="https://github.com/Alyssonafsantos/Encriptador-Descriptador-De-Texto" target="_blank" aria-label="link para repositorio github" class="projeto__informacao--link-a">Repositório</a>
+                <a href="https://alyssonafsantos.github.io/Encriptador-Descriptador-De-Texto" target="_blank" aria-label="link para pagina demo do projeto" class="projeto__informacao--link-b">Ver demo</a>
+            </aside>
+        </div>
+        <div class="xpprofissional__projeto-b">
+            <figure class="projetos__imagem">
+                <img src="assets/img/rpg.png" alt="RPG da escola fCC refeito" class="imagem--projeto" />
+            </figure>
+            <aside class="projeto__informacao">
+                <div class="informacao--conjunto">
+                    <h3 class="projeto__informacao--titulo">RPG reestruturado da escola fCC</h3>
+                    <p class="projeto__informacao--paragrafo">Projeto de jogo RPG feito nas aulas da escola freeCodeCamp</p>
+                </div>
+                <a href="https://github.com/Alyssonafsantos/rpg-dragon-slayer" target="_blank" aria-label="link para repositorio github" class="projeto__informacao--link-a">Repositório</a>
+                <a href="https://alyssonafsantos.github.io/rpg-dragon-slayer" target="_blank" aria-label="link para pagina demo do projeto" class="projeto__informacao--link-b">Ver demo</a>
+            </aside>
+        </div>
+        <div class="xpprofissional__projeto-a">
+            <figure>
+                <img src="assets/img/nemero secreto.png" alt="Jogo criado junto a escola alura." class="imagem--projeto" />
+            </figure>
+            <aside class="projeto__informacao">
+                <div class="informacao--conjunto">
+                    <h3 class="projeto__informacao--titulo">Jogo Do número secreto da Alura</h3>
+                    <p class="projeto__informacao--paragrafo">Jogo feito durante curso da escola Alura</p>
+                </div>
+                <a href="https://github.com/Alyssonafsantos/Acerte-o-numero" target="_blank" aria-label="link para repositorio github" class="projeto__informacao--link-a">Repositório</a>
+                <a href="https://alyssonafsantos.github.io/Acerte-o-numero" target="_blank" aria-label="link para pagina demo do projeto" class="projeto__informacao--link-b">Ver demo</a>
+            </aside>
+        </div>
+        <div class="xpprofissional__projeto-b">
+            <figure>
+                <img src="assets/img/busca filosofo.png" alt="Página criada na imersão alura com gemini." class="imagem--projeto" />
+            </figure>
+            <aside class="projeto__informacao">
+                <div class="informacao--conjunto">
+                    <h3 class="projeto__informacao--titulo">Area de pesquisa sobre antigos filósofos</h3>
+                    <p class="projeto__informacao--paragrafo">Projeto desenvolvido em imersão da escola Alura com Google Gemini</p>
+                </div>
+                <a href="https://github.com/Alyssonafsantos/buscaFilosofos" target="_blank" aria-label="link para repositorio github" class="projeto__informacao--link-a">Repositório</a>
+                <a href="https://alyssonafsantos.github.io/buscaFilosofos" target="_blank" aria-label="link para pagina demo do projeto" class="projeto__informacao--link-b">Ver demo</a>
+            </aside>
+        </div>
+        <div class="xpprofissional__projeto-a">
+            <figure>
+                <img src="assets/img/contador de calorias.png" alt="Calculadora de calorias da escola fCC refeito" class="imagem--projeto" />
+            </figure>
+            <aside class="projeto__informacao">
+                <div class="informacao--conjunto">
+                    <h3 class="projeto__informacao--titulo">Calculadora de calorias da escola fCC.</h3>
+                    <p class="projeto__informacao--paragrafo">Desenvolvido nas aulas da escola freeCodeCamp </p>
+                </div>
+                <a href="https://github.com/Alyssonafsantos/contador-de-calorias" target="_blank" aria-label="link para repositorio github" class="projeto__informacao--link-a">Repositório</a>
+                <a href="https://alyssonafsantos.github.io/contador-de-calorias" target="_blank" aria-label="link para pagina demo do projeto" class="projeto__informacao--link-b">Ver demo</a>
+            </aside>
+        </div>
+        </section>
+    </main>
+    <footer class="rodape" id="rodape">
+        <div class="rodape__contato">
+            <div class="rodape__imagem">
+                <img src="assets/img/imagem de contato.jpeg" alt="imagem de um telefone ou email" class="contato--imagem" />
+            </div>
+            <div class="rodape__formulario">
+                <div class="rodape__formulario--texto">
+                    <h2 class="rodape__formulario--titulo">Contato</h2>
+                    <p class="rodape__formulario--paragrafo">Quer entrar em contato comigo?<br> Preencha o formulário a seguir e entrarei em contato o mais rápido possível.</p>
+                </div>
+                <div class="rodape__formulario--campo">
+                    <label for="nome-requerente" class="input--label">Nome</label>
+                    <input class="campo--input" type="text" name="nome" id="nome-requerente">
+                    <label for="email-requerente" class="input--label">E-mail</label>
+                    <input class="campo--input" type="email" name="email" id="email-requerente">
+                    <label for="assunto-contato" class="input--label">Assunto</label>
+                    <input class="campo--input" type="text" name="assunto" id="assunto-contato">
+                    <label for="mensagem-requerente" class="input--label">Mensagem</label>
+                    <textarea class="campo--input" type="text" name="mensagem" id="mensagem-requerente"></textarea>
+                    <button id="enviar" aria-label="botão de enviar mensagem" name="enviar" type="submit" class="rodape__formulario--botao">Enviar mensagem</button>
+                </div>
+            </div>
+        </div>
+        <p class="direitos">Desenvolvido por Alysson Santos.<br>2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
