@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgba(93, 150, 119, 0.707);
 }
 
 section {
     padding-top: 4.5%;
 }
+
+
 
 /* CABEÇALHO */
 
@@ -19,7 +21,7 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position:fixed;
+    position: fixed;
     top: 0;
     padding: 0 3rem;
     height: 9%;
@@ -30,7 +32,7 @@ section {
 
 .menu-lateral {
     display: none;
-} 
+}
 
 .cabecalho__container--itens {
     display: flex;
@@ -113,7 +115,8 @@ section {
     border-radius: 1rem;
 }
 
-.redessociais--link a, .lista--link{
+.redessociais--link a,
+.lista--link {
     text-decoration: none;
     color: black;
     border-radius: 2rem;
@@ -169,7 +172,9 @@ section {
     justify-content: space-around;
 }
 
-.item--html, .item--css, .item--javascript {
+.item--html,
+.item--css,
+.item--javascript {
     background-color: rgb(186, 186, 202);
     height: 80%;
     width: 99%;
@@ -178,7 +183,7 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
-    
+
 }
 
 .container__skills p {
@@ -188,7 +193,8 @@ section {
     font-weight: 400;
 }
 
-.html--icone, .javascript--icone{
+.html--icone,
+.javascript--icone {
     width: 70%;
 }
 
@@ -226,7 +232,11 @@ section {
     width: 12%;
 }
 
-.item--skate, .item--guitarra, .item--games, .item--series, .item--musica {
+.item--skate,
+.item--guitarra,
+.item--games,
+.item--series,
+.item--musica {
     background-color: rgb(186, 186, 202);
     height: 100%;
     border-radius: 1rem;
@@ -239,7 +249,9 @@ section {
     font-weight: 400;
 }
 
-.guitarra--icone, .games--icone, .musica--icone{
+.guitarra--icone,
+.games--icone,
+.musica--icone {
     width: 29px;
 }
 
@@ -258,7 +270,7 @@ section {
 
 }
 
-.container__formacao--texto{
+.container__formacao--texto {
     align-self: center;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
@@ -283,7 +295,9 @@ section {
     border-radius: 10px;
 }
 
-.fcclogo, .aluralogo, .challengelogo{
+.fcclogo,
+.aluralogo,
+.challengelogo {
     font-size: 1.2rem;
 }
 
@@ -304,7 +318,7 @@ section {
     font-optical-sizing: auto;
 }
 
-.xpprofissional__projeto-a{
+.xpprofissional__projeto-a {
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -347,7 +361,7 @@ section {
     padding: 1.2rem;
     font-size: 1rem;
     border-radius: 1rem;
-    color:rgb(29, 117, 161);
+    color: rgb(29, 117, 161);
     border: none;
     transition: 1s;
     text-align: center;
@@ -355,15 +369,15 @@ section {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    
+
 }
 
 .projeto__informacao--link-b {
     padding: 1.2rem 1.602rem;
     font-size: 1rem;
     border-radius: 1rem;
-    background-color:rgb(29, 117, 161);
-    color:aliceblue;
+    background-color: rgb(29, 117, 161);
+    color: aliceblue;
     border: none;
     transition: 1s;
     text-align: center;
@@ -372,7 +386,8 @@ section {
     font-weight: 400;
 }
 
-.projeto__informacao--link-a:hover, .projeto__informacao--link-b:hover {
+.projeto__informacao--link-a:hover,
+.projeto__informacao--link-b:hover {
     transform: scale(1.13);
     box-shadow: 0px 0px 10px;
 }
@@ -445,13 +460,23 @@ label {
     border-radius: 10px;
     padding: 0.65rem;
     background-color: aquamarine;
-    border-right: none;
-    border-left: none;
-    border-top: none;
     font-size: 1.5rem;
+    border: none;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     width: 80%;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.span-required {
+    display: none;
+    font-size: 12px;
+    color: #e63636;
+    margin: 3px 0 0 1px;
 }
 
 .rodape__formulario--botao {
@@ -463,8 +488,8 @@ label {
     transition: 1s;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    background-color:rgb(29, 117, 161);
-    color:aliceblue;
+    background-color: rgb(29, 117, 161);
+    color: aliceblue;
 }
 
 .rodape__formulario--botao:hover {
@@ -478,9 +503,9 @@ label {
     font-weight: 400;
 }
 
-/* CORREÇÕES */
+/* Responsividade */
 
-@media screen and (max-width: 1192px){           
+@media screen and (max-width: 1192px) {
     .container__sobremim--items {
         flex-direction: column-reverse;
         align-items: center;
@@ -511,23 +536,24 @@ label {
 @media screen and (max-width: 985px) {
 
     @keyframes displaymenu {
-    0% {
-        width: 0vw;
-    }
+        0% {
+            width: 0vw;
+        }
 
-    100% {
-        width: 30vw;
+        100% {
+            width: 30vw;
+        }
     }
-}
 
     .cabecalho__container {
         height: 6%;
     }
 
-    .xpprofissional__projeto-a, .xpprofissional__projeto-b {
+    .xpprofissional__projeto-a,
+    .xpprofissional__projeto-b {
         flex-direction: column;
     }
-    
+
     .cabecalho__lista {
         position: absolute;
         flex-direction: column;
@@ -540,7 +566,7 @@ label {
         animation: displaymenu 0.2s ease-in;
         z-index: 999;
     }
-    
+
     .cabecalho__lista--itens {
         font-size: 1.5rem;
         width: 100%;
@@ -548,20 +574,21 @@ label {
         border-radius: 20px;
         padding-right: 10px;
     }
-    
+
     .cabecalho__lista--itens:hover {
         background-color: rgba(63, 48, 48, 0.17);
         color: white;
         transition: 0.4s
     }
-    
+
     .menu-lateral {
         display: block;
         font-size: 2rem;
         margin: 0 0 0 30px;
     }
 
-    .menu-lateral:hover, .btn-fechar {
+    .menu-lateral:hover,
+    .btn-fechar {
         cursor: pointer
     }
 
@@ -569,9 +596,9 @@ label {
         display: block;
         font-size: 2rem;
         margin: 10px 0 0 10px;
-        width:32.5px;
+        width: 32.5px;
     }
-    
+
     .esconder {
         display: none;
     }
@@ -594,7 +621,7 @@ label {
         display: flex;
         justify-content: center;
     }
-    
+
     .contato--imagem {
         width: 350px;
         position: static;
@@ -605,7 +632,7 @@ label {
     .rodape__formulario--texto {
         text-align: center;
     }
-    
+
     .rodape__formulario--campo {
         margin: 0 auto;
     }
@@ -630,13 +657,13 @@ label {
     .cabecalho__container {
         height: 6%;
     }
-    
+
     .cabecalho__container--itens {
         font-size: 70%;
         gap: 0;
         align-items: center;
     }
-    
+
     .container__formacao--lista {
         flex-direction: column;
     }
