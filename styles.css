@@ -613,10 +613,6 @@ textarea:focus {
 }
 
 @media screen and (max-width: 783px) {
-    section {
-        padding-top: 11%;
-    }
-
     .imagem--projeto {
         width: 100%;
     }
@@ -664,6 +660,10 @@ textarea:focus {
 @media screen and (max-width: 454px) {
     .cabecalho__container {
         height: 6%;
+    }
+
+    section {
+        padding-top: 8%;
     }
 
     .cabecalho__lista {
