@@ -549,6 +549,10 @@ textarea:focus {
         height: 6%;
     }
 
+    section {
+        padding-top: 7%;
+    }
+
     .xpprofissional__projeto-a,
     .xpprofissional__projeto-b {
         flex-direction: column;
@@ -609,6 +613,10 @@ textarea:focus {
 }
 
 @media screen and (max-width: 783px) {
+    section {
+        padding-top: 11%;
+    }
+
     .imagem--projeto {
         width: 100%;
     }
@@ -656,6 +664,10 @@ textarea:focus {
 @media screen and (max-width: 454px) {
     .cabecalho__container {
         height: 6%;
+    }
+
+    .cabecalho__lista {
+        width: 45vw;
     }
 
     .cabecalho__container--itens {
