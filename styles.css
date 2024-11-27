@@ -613,6 +613,10 @@ textarea:focus {
 }
 
 @media screen and (max-width: 783px) {
+    section {
+        padding-top: 8%;
+    }
+    
     .imagem--projeto {
         width: 100%;
     }
@@ -663,7 +667,7 @@ textarea:focus {
     }
 
     section {
-        padding-top: 8%;
+        padding-top: 12%;
     }
 
     .cabecalho__lista {
@@ -678,5 +682,9 @@ textarea:focus {
 
     .container__formacao--lista {
         flex-direction: column;
+    }
+
+    .xpprofissional {
+        padding-bottom: 2%;
     }
 }
